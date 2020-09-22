@@ -4,6 +4,6 @@ from automessaging import automessaging
 
 sched = BlockingScheduler()
 
-sched.add_job(automessaging, 'interval', seconds=10)
+sched.add_job(automessaging, 'interval', hours=24)
 
 sched.start()
